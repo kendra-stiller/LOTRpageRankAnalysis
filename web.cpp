@@ -12,7 +12,7 @@ using namespace std;
  * -used in web::assign_relationships() only
  * 
  * -The "checker queue" as I'm calling it for now is pretty much a basic
- * 		queue, with one added featrure.
+ * 		queue, with one added feature.
  * 
  * -It is used when creating the edge weights while constructing 
  * 		the graph. Essentially it is the window of 15 words (we can change
@@ -205,21 +205,21 @@ using namespace std;
 //			-possesives i.e. Gandalf's != Gandalf
 	void web::assign_relationships(char *FileText)
 	{
-		ifstream book;
+		ifstream bookFile;
 		string word;
-		book.open(FileText);
-		if(book.is_open())
+		bookFile.open(FileText);
+		if(bookFile.is_open())
 		{
 			checker_queue checker;
 			
 			
 			//look at every word in the book
-			while(book >> word)
+			while(bookFile >> word)
 			{
 				
 				int index = is_character(word);//check each word
 				
-				if( index == -1 )//if it's not a character
+				if( index == -1 ) //is_character returns -1 if it's not a character
 				{
 					checker.push(NULL);//queue a NULL pointer 
 				}
@@ -243,7 +243,7 @@ using namespace std;
 	}
 
 //	GETNAMES(NAMEFILE)
-//		uses the name file to insert all the characters in the web
+//		uses the name file to insert all the characters in the graph(web)
 	void web::getnames(char* FileName)
 	{
 
