@@ -158,13 +158,6 @@ using namespace std;
  * 		connected vertices are mentioned within 15 ("scope") words of 
  * 		each other
  * 
- * -I pretty much implemented both methods of edges- the vector method
- * 		similar to the graph homework is the main one
- * 
- * -the adjacency matrix is secondary- it is constructed using the vector 
- * 		method from before
- * 
- * -
  * ---------------------------------------------------------------------
  */
  
@@ -244,6 +237,8 @@ using namespace std;
 
 //	GETNAMES(NAMEFILE)
 //		uses the name file to insert all the characters in the graph(web)
+// ***TODO: ALLOW FOR NICKNAMES***
+// ***TODO: ALLOW FOR POSSESSIVE CASE***
 	void web::getnames(char* FileName)
 	{
 
@@ -255,7 +250,7 @@ using namespace std;
 		 {
 			 int id = 0;
 			 
-			 while(getline(File,name))
+			 while(getline(File,name))	// need to add section for comma delimited nicknames
 			 {
 				 add_char(id, name);
 				 id++;
@@ -274,6 +269,7 @@ using namespace std;
 	
 //	ADD_CHAR(ID, NAME)
 //		adds a new character to the graph
+// ***TODO: ADD NICKNAME VECTOR?***
 	void web::add_char(int ID, std::string name)
 	{
 		character insert;

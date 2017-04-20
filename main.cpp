@@ -15,8 +15,8 @@ using namespace std;
 //			the namefile should be a file with the name of each character 
 //			on a new line
 //		[BOOKTEXTFILE].txt
-//			the full text of the book, in the hungergames example we had
-//			from HW1 everything was lowercase, makes things easier
+//			the full text of the book, all lowercase and all punctuation 
+//          removed.
 //----------------------------------------------------------------------
 
 int main(int argc, char* argv[])
