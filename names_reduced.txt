@@ -1,0 +1,16 @@
+gandalf,stormcrow,mithrandir,tharkun,olorin,incanus
+frodo
+aragorn,strider,elessar,dunadan
+legolas
+gollum,smeagol,slinker,stinker 
+bilbo
+gimli
+boromir
+saruman
+sam,samwise,gamgee
+pippin,peregrin,took
+merry,meriadoc,brandybuck
+eomer
+theoden
+faramir
+sauron
